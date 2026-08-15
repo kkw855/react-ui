@@ -45,6 +45,22 @@ function App() {
 
 그 외 표준 `<button>` HTML 속성을 모두 그대로 지원합니다 (`onClick`, `type`, `form` 등).
 
+## 필수 설정
+
+일부 컴포넌트는 내부적으로 [Base UI](https://base-ui.com/react)의 Dialog, Popover 등 포탈(portal) 기반 컴포넌트를 사용합니다. 이런 컴포넌트가 올바르게 동작하려면, **소비 프로젝트의 전역 CSS**에 아래 두 규칙을 추가해주세요 (라이브러리가 제공하는 `style.css`에는 포함되어 있지 않습니다 — 앱의 최상위 DOM에 대한 설정이라 각 프로젝트가 직접 넣어야 합니다):
+
+```css
+/* 앱을 마운트하는 루트 엘리먼트에 적용 */
+.root {
+  isolation: isolate;
+}
+
+/* Dialog 등의 backdrop이 iOS Safari에서 올바르게 동작하도록 */
+body {
+  position: relative;
+}
+```
+
 ## 로컬 개발
 
 ```bash
