@@ -190,7 +190,7 @@ export default [{
 tailwindcss.configs.recommended, {
   settings: {
     tailwindcss: {
-      cssConfigPath: './src/styles.css',
+      cssConfigPath: './src/styles/globals.css',
     },
   },
 }, // TanStack Router의 루트 라우터 파일에 대해서는 파일명 규칙(KEBAB_CASE) 예외 처리
