@@ -1,11 +1,11 @@
 /// <reference types="vitest/config" />
 import path from 'node:path'
 
+import { storybookTest } from '@storybook/addon-vitest/vitest-plugin'
 import tailwindcss from '@tailwindcss/vite'
 import viteReact from '@vitejs/plugin-react'
-import { defineConfig } from 'vite'
-import { storybookTest } from '@storybook/addon-vitest/vitest-plugin'
 import { playwright } from '@vitest/browser-playwright'
+import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
 
 const dirname = import.meta.dirname
@@ -57,4 +57,4 @@ const config = defineConfig({
     ],
   },
 })
-export default config;
+export default config
