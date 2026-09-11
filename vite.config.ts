@@ -8,7 +8,14 @@ import { playwright } from '@vitest/browser-playwright'
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
 
+import pkg from './package.json' with { type: 'json' }
+
 const dirname = import.meta.dirname
+
+const deps = [
+  ...Object.keys(pkg.peerDependencies ?? {}),
+  ...Object.keys(pkg.dependencies ?? {}),
+]
 
 const config = defineConfig({
   plugins: [
@@ -28,7 +35,8 @@ const config = defineConfig({
       fileName: (format) => (format === 'es' ? 'index.js' : 'index.cjs'),
     },
     rollupOptions: {
-      external: ['react', 'react-dom', 'react/jsx-rumtime'],
+      // react, react-dom, react/jsx-runtime, @base-ui/react/button 같은 하위 경로까지 전부 external
+      external: (id) => deps.some((d) => id === d || id.startsWith(`${d}/`)),
     },
   },
   test: {
