@@ -1,5 +1,11 @@
 # @endsoul/react-ui
 
+## 0.2.1
+
+### Patch Changes
+
+- [`1efa29b`](https://github.com/kkw855/react-ui/commit/1efa29bff99d2623d84cc8f7b311548b8024fcbf) Thanks [@kkw855](https://github.com/kkw855)! - external 목록 자동화
+
 ## 0.2.0
 
 ### Minor Changes
