@@ -5,7 +5,7 @@ import { cn } from '../../lib/utils'
 
 // <div> 전체 그룹 (value/defaultValue/onValueChange)
 export function Tabs({ className, ...props }: BaseTabs.Root.Props) {
-  return <BaseTabs.Root className={cn('w-fit', className)} {...props} />
+  return <BaseTabs.Root className={className} {...props} />
 }
 
 // <div> 탭 버튼들을 담는 컨테이너
@@ -13,7 +13,7 @@ export function TabsList({ className, ...props }: BaseTabs.List.Props) {
   return (
     <BaseTabs.List
       className={cn(
-        'relative z-1 -mb-px inline-flex gap-4 text-black',
+        'relative z-1 -mb-px flex w-fit gap-4 text-inherit',
         className,
       )}
       {...props}
@@ -37,7 +37,7 @@ export function TabsIndicator({
   return (
     <BaseTabs.Indicator
       className={cn(
-        'absolute top-0 left-0 -z-1 h-full w-(--active-tab-width) translate-x-(--active-tab-left) border-x border-t border-black bg-white transition-[translate,width]',
+        'absolute top-0 left-0 -z-1 h-full w-(--active-tab-width) translate-x-(--active-tab-left) border-x border-t border-inherit bg-inherit transition-[translate,width]',
         className,
       )}
       {...props}
@@ -47,5 +47,5 @@ export function TabsIndicator({
 
 // <div> 탭에 대응하는 콘텐츠 영역
 export function TabsPanel({ className, ...props }: BaseTabs.Panel.Props) {
-  return <BaseTabs.Panel className={cn('p-4', className)} {...props} />
+  return <BaseTabs.Panel className={className} {...props} />
 }
