@@ -1,5 +1,11 @@
 # @endsoul/react-ui
 
+## 0.2.2
+
+### Patch Changes
+
+- [`f9acade`](https://github.com/kkw855/react-ui/commit/f9acadee2ec86b0fce86b5f943ba59aaed57f1ac) Thanks [@kkw855](https://github.com/kkw855)! - Tabs 컴포넌트에 Tab 색상이 잘 나오도록 변경
+
 ## 0.2.1
 
 ### Patch Changes
