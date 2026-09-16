@@ -1,5 +1,11 @@
 # @endsoul/react-ui
 
+## 0.3.0
+
+### Minor Changes
+
+- [`8d7144c`](https://github.com/kkw855/react-ui/commit/8d7144cfe7e3a4332cc4c16025f1a775f086146a) Thanks [@kkw855](https://github.com/kkw855)! - Input 컴포넌트 추가
+
 ## 0.2.2
 
 ### Patch Changes
