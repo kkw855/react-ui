@@ -1,5 +1,11 @@
 # @endsoul/react-ui
 
+## 0.3.1
+
+### Patch Changes
+
+- [`0a00b0a`](https://github.com/kkw855/react-ui/commit/0a00b0ae48b79cc21e84c09d63a20798a651f840) Thanks [@kkw855](https://github.com/kkw855)! - Tabs, Button, Input 컴포넌트에 border-border 적용
+
 ## 0.3.0
 
 ### Minor Changes
