@@ -37,7 +37,7 @@ export function TabsIndicator({
   return (
     <BaseTabs.Indicator
       className={cn(
-        'absolute top-0 left-0 -z-1 h-full w-(--active-tab-width) translate-x-(--active-tab-left) border-x border-t border-inherit bg-inherit transition-[translate,width]',
+        'absolute top-0 left-0 -z-1 h-full w-(--active-tab-width) translate-x-(--active-tab-left) border-x border-t border-border transition-[translate,width]',
         className,
       )}
       {...props}

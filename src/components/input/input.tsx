@@ -9,7 +9,7 @@ export function Input({ className, ...props }: InputProps) {
   return (
     <BaseInput
       className={cn(
-        'h-9 w-full border bg-transparent px-3 py-1 text-base md:text-sm',
+        'h-9 w-full border border-border bg-transparent px-3 py-1 text-base md:text-sm',
         className,
       )}
       {...props}
