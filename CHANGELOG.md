@@ -1,5 +1,11 @@
 # @endsoul/react-ui
 
+## 0.3.2
+
+### Patch Changes
+
+- [`c195264`](https://github.com/kkw855/react-ui/commit/c195264a73fcdecbbf4b8101d9408c9a0681b00e) Thanks [@kkw855](https://github.com/kkw855)! - 버튼 border 관련 설정을 default variant 로 이동
+
 ## 0.3.1
 
 ### Patch Changes
