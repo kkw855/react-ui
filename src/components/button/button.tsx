@@ -5,12 +5,12 @@ import type { ButtonHTMLAttributes } from 'react'
 import { cn } from './../../lib/utils'
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center gap-2 rounded-md border border-border text-sm transition-all hover:brightness-90 disabled:pointer-events-none disabled:opacity-50',
+  'inline-flex items-center justify-center gap-2 rounded-md text-sm transition-all hover:brightness-90 disabled:pointer-events-none disabled:opacity-50',
   {
     variants: {
       variant: {
-        default: '',
-        ghost: 'border-none',
+        default: 'border border-border',
+        ghost: 'border-none bg-transparent',
       },
       size: {
         default: 'h-9 px-4 py-2',
